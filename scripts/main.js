@@ -4,5 +4,5 @@ function showFormData(){
     let phoneNumber = document.getElementById("phonenum").value;
     let message = document.getElementById("message").value;
 
-    alert(`Name: ${name}\nEmail: ${email}\nPhone Number: ${phoneNumber}\nMessage: ${message}`);
+    alert(`Firs Name: ${name}\nEmail: ${email}\nPhone Number: ${phoneNumber}\nMessage: ${message}`);
 }
