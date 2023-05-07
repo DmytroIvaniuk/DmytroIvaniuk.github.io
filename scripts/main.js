@@ -1,30 +1,8 @@
-var myImage = document.querySelector('img');
+function showFormData(){
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let phoneNumber = document.getElementById("phonenum").value;
+    let message = document.getElementById("message").value;
 
-myImage.onclick = function() {
-    var mySrc = myImage.getAttribute('src');
-    if(mySrc === 'images/image.jpg') {
-      myImage.setAttribute ('src','images/image2.jpg');
-    } else {
-      myImage.setAttribute ('src','images/image.jpg');
-    }
-}
-
-var myButton = document.querySelector('button');
-var myHeading = document.querySelector('h1');
-
-function setUserName() {
-  var myName = prompt('Please enter your name.');
-  localStorage.setItem('name', myName);
-  myHeading.textContent = 'Mozilla is cool, ' + myName;
-}
-
-if(!localStorage.getItem('name')) {
-  setUserName();
-} else {
-  var storedName = localStorage.getItem('name');
-  myHeading.textContent = 'Mozilla is cool, ' + storedName;
-}
-
-myButton.onclick = function() {
-  setUserName();
+    alert(`Name: ${name}\nEmail: ${email}\nPhone Number: ${phoneNumber}\nMessage: ${message}`);
 }
