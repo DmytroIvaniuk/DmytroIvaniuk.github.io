@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ivaniuk Dmytro</title>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ivaniuk Dmytro</title>
+    <link rel="stylesheet" href="styles/style.css">
+    </head>
     <body>
         <h1>Hey, I'm Dmytro!</h1>
         <h2>Contact me:</h2>
-        <form onsubmit="showFormData()">
+        <form id="form" onsubmit="showFormData()">
             <label for="name">Name:</label><br>
-            <input type="text" name="name" id="name""><br><br>
+            <input type="text" placeholder="Enter name" name="name" id="name"><br><br>
             <label for="email">E-mail:</label><br>
-            <input type="email" name="email" id="email"><br><br>
+            <input type="email" placeholder="Enter E-mail" name="email" id="email"><br><br>
             <label for="phonenum">Phone number:</label><br>
-            <input type="tel" name="phonenum" id="phonenum"><br><br>
+            <input type="tel" placeholder="Enter phone number" name="phonenum" id="phonenum"><br><br>
             <label for="message">Your message:</label><br>
-            <input type="text" name="message" id="message"><br><br>
-            <input type="submit" value ="Submit">
+            <input type="text" placeholder="Enter message" name="message" id="message"><br><br>
+            <input type="submit" id = "submit" value ="Submit">
         </form>
         <script src="scripts/main.js"></script>
     </body>

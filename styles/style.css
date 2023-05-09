@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#form{
+    margin: 20px;
+    max-width: 300px;
+}
+
+#form input{
+    width: 100%;
+    padding: 14px 15px;
+}
+
+#submit{
+    background-color: rgb(233, 94, 40);
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+#submit:hover{
+    opacity: 1;
+}
