@@ -27,7 +27,7 @@ body {
     background-size: cover;
     padding: 25px 20px;
     width: 80%;
-    float: right;
+    float: left;
 }
 
 #submit {
@@ -64,5 +64,6 @@ a:active {
 
 .contacts {
     max-width: 250px;
-    margin-right: 10px;
+    margin: auto;
+    float: right;
 }
