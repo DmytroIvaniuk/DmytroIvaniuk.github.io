@@ -1,34 +1,36 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: rgb(235, 235, 235);
-    width: 70%;
+    width: 90%;
     margin: auto;
 }
 
-#form{
+#form {
     padding: 5px 20px;
     margin: 5px 15px;
     max-width: 350px;
     background-color: rgba(101, 120, 126, 0.7);
 }
 
-#form input{
+#form input {
     width: 100%;
     padding: 14px 15px;
 }
 
-.bgimg{
+.bgimg {
     background-image: url("../images/plants.jpg");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 25px 20px;
+    width: 80%;
+    float: right;
 }
 
-#submit{
+#submit {
     background-color: rgb(233, 94, 40);
     color: white;
     padding: 20px;
@@ -40,6 +42,27 @@ body{
     opacity: 0.9;
 }
 
-#submit:hover{
+#submit:hover {
     opacity: 1;
+}
+
+a:link,
+a:visited {
+    background-color: grey;
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+}
+
+a:hover,
+a:active {
+    background-color: darkgrey;
+}
+
+.contacts {
+    max-width: 250px;
+    margin-right: 10px;
 }
