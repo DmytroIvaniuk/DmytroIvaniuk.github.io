@@ -5,252 +5,424 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV-Template</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <a href="javascript:void(0);" onclick="moveHeader()">
+        <div id="mobile-nav-toggle"><i class='bx bx-menu'></i></div>
+    </a>
+    <!-- End Mobile nav toggle button -->
     <!-- ======= Header ======= -->
     <header id="header">
-        <div class="header-column">
-            <div class="profile">
-                <img src="images/profile-img.jpg" alt="profile image">
-                <h1>
-                    <a href="index.html">Dmytro Ivaniuk</a>
-                </h1>
-                <div class="social-links">
-                    <a href="https://twitter.com/Repan" class="twitter" target="_blank"></a>
-                    <a href="https://www.facebook.com/IvaniukDmytro" class="facebook" target="_blank"></a>
-                    <a href="https://www.instagram.com/dmytroivq" class="instagram" target="_blank"></a>
-                    <a href="https://github.com/DmytroIvaniuk" class="github" target="_blank"></a>
-                    <a href="https://www.linkedin.com/in/dmytroivaniuk/" class="linkedin" target="_blank"></a>
-                </div>
+        <div class="profile">
+            <img src="images/profile-img.jpg" alt="profile image" class="profile-img">
+            <h1>
+                <a href="index.html">Dmytro Ivaniuk</a>
+            </h1>
+            <div class="social-links">
+                <a href="https://twitter.com/Repan" class="twitter" target="_blank"><i
+                        class='bx bxl-twitter'></i></i></a>
+                <a href="https://www.facebook.com/IvaniukDmytro" class="facebook" target="_blank"><i
+                        class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/dmytroivq" class="instagram" target="_blank"><i
+                        class='bx bxl-instagram'></i></a>
+                <a href="https://github.com/DmytroIvaniuk" class="github" target="_blank"><i
+                        class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/dmytroivaniuk/" class="linkedin" target="_blank"><i
+                        class='bx bxl-linkedin'></i></a>
             </div>
-            <nav id="navbar" class="nav-menu navbar">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
         </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#hero"><i class="bx bx-home"></i><span>Home</span></a></li>
+                <li><a href="#about"><i class='bx bx-user'></i><span>About</span></a></li>
+                <li><a href="#resume"><i class='bx bx-file-blank'></i><span>Resume</span></a></li>
+                <li><a href="#portfolio"><i class='bx bx-book-content'></i><span>Portfolio</span></a></li>
+                <li><a href="#services"><i class='bx bx-server'></i><span>Services</span></a></li>
+                <li><a href="#contact"><i class='bx bx-envelope'></i><span>Contact</span></a></li>
+            </ul>
+        </nav>
     </header>
     <!-- End Header -->
     <!-- ======= Hero Section ======= -->
-    <h1>Dmytro Ivaniuk</h1>
-    <p>I'm Front End Developer</p>
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <h1>Dmytro Ivaniuk</h1>
+            <p>I'm Front End Developer</p>
+        </div>
+    </section>
     <!-- End Hero Section-->
-    <!-- ======= About Section ======= -->
-    <h2>About</h2>
-    <p>I am a highly motivated and passionate Junior Front End Developer
-        with a strong desire to create visually appealing and user-friendly
-        websites. With a solid foundation in HTML, CSS, and JavaScript,
-        I am dedicated to continuously expanding my skills and staying up to
-        date with the latest web development trends and technologies.</p>
-    <img src="images/profile-img.jpg" alt="profile image">
-    <h3>Web Developer:</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.</p>
-    <ul>
-        <li><strong>Website:</strong><span> dmytroivaniuk.github.io</span></li>
-        <li><strong>Phone:</strong><span> +380971586797</span></li>
-        <li><strong>City:</strong><span> Odesa, Ukraine</span></li>
-    </ul>
-    <ul>
-        <li><strong>Degree:</strong><span> Master</span></li>
-        <li><strong>Email:</strong><span> dmytro.ivaniuk55@gmail.com</span></li>
-        <li><strong>Freelance:</strong><span> Available</span></li>
-    </ul>
-    <p>Throughout my academic journey and personal projects, I have gained hands-on
-        experience in building responsive and accessible websites. I am proficient
-        in utilizing modern frameworks such as React and Angular to develop
-        interactive web applications. I also have knowledge of version control
-        systems like Git, which enables seamless collaboration and efficient code
-        management.</p>
-    <!-- End About Section -->
-    <!-- ======= Facts Section ======= -->
-    <h2>Facts</h2>
-    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-        aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-        quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-        fugiat sit in iste officiis commodi quidem hic quas.</p>
-    <div class="count-box">
-        <span>232</span>
-        <p><strong>Happy Clients</strong> consequuntur quae</p>
-    </div>
-    <div class="count-box">
-        <span>521</span>
-        <p><strong>Projects</strong> adipisci atque cum quia aut</p>
-    </div>
-    <div class="count-box">
-        <span>1453</span>
-        <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
-    </div>
-    <div class="count-box">
-        <span>32</span>
-        <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
-    </div>
-    <!-- End Facts Section -->
-    <!-- ======= Skills Section ======= -->
-    <h2>Skills</h2>
-    <p>As a team player, I thrive in collaborative environments where
-        I can contribute my ideas and learn from fellow developers.
-        I have excellent communication skills and can effectively articulate
-        technical concepts to both technical and non-technical stakeholders.</p>
-    <div class="column">
-        <div class="progress"><span>HTML 100%</span></div>
-        <div class="progress"><span>CSS 90%</span></div>
-        <div class="progress"><span>JavaScript 75%</span></div>
-    </div>
-    <div class="column">
-        <div class="progress"><span>PHP 80%</span></div>
-        <div class="progress"><span>WordPress/CMS 90%</span></div>
-        <div class="progress"><span>Photoshop 55%</span></div>
-    </div>
-    <!-- End Skills Section -->
-    <!-- ======= Resume Section ======= -->
-    <h2>Resume</h2>
-    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-        aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-        quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
-        sit in iste officiis commodi quidem hic quas.</p>
-    <div class="column">
-        <h3>Summary</h3>
-        <h4>Dmytro Ivaniuk</h4>
-        <p><em>Innovative and deadline-driven Graphic Designer with 3+ years
-                of experience designing and developing user-centered digital/print
-                marketing material from initial concept to final, polished
-                deliverable.</em></p>
-        <ul>
-            <li>Portland par 127,Orlando, FL</li>
-            <li>(123) 456-7891</li>
-            <li>alice.barkley@example.com</li>
-        </ul>
-        <h3>Education</h3>
-        <h4>Master of Fine Arts & Graphic Design</h4>
-        <h5>2015-2016</h5>
-        <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-        <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam
-            iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti
-            nerada porti sand markend</p>
-        <h4>Bachelor of Fine Arts & Graphic Design</h4>
-        <h5>2010-2014</h5>
-        <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-        <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae
-            reiciendis et quis Eius vel ratione eius unde vitae rerum
-            voluptates asperiores voluptatem Earum molestiae consequatur
-            neque etlon sader mart dila</p>
-    </div>
-    <div class="column">
-        <h3>Professional Experience</h3>
-        <h4>Graphic Designer</h4>
-        <h5>2019-Present</h5>
-        <p><em>Experion, New York, NY</em></p>
-        <ul>
-            <li>Lead in the design, development, and implementation of the
-                graphic, layout, and production communication materials</li>
-            <li>Delegate tasks to the 7 members of the design team and
-                provide counsel on all aspects of the project.</li>
-            <li>Supervise the assessment of all graphic materials in
-                order to ensure quality and accuracy of the design</li>
-            <li>Oversee the efficient use of production project
-                budgets ranging from $2,000 - $25,000</li>
-        </ul>
-        <h4>Graphic design specialist</h4>
-        <h5>2017-2018</h5>
-        <p><em>Stepping Stone Advertising, New York, NY</em></p>
-        <ul>
-            <li>Developed numerous marketing programs (logos, brochures,
-                infographics, presentations, and advertisements).</li>
-            <li>Managed up to 5 projects or tasks at a given time while
-                under pressure</li>
-            <li>Recommended and consulted with clients on the most
-                appropriate graphic design</li>
-            <li>Created 4+ design presentations and proposals a month
-                for clients and account managers</li>
-        </ul>
-    </div>
-    <!-- End Resume Section -->
-    <!-- ======= Portfolio Section ======= -->
-    <h2>Portfolio</h2>
-    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-        ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-        quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-        Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-    <ul>
-        <li>All</li>
-        <li>App</li>
-        <li>Card</li>
-        <li>Web</li>
-    </ul>
-    <img src="images/portfolio/portfolio-1.jpg">
-    <img src="images/portfolio/portfolio-2.jpg">
-    <img src="images/portfolio/portfolio-3.jpg">
-    <img src="images/portfolio/portfolio-4.jpg">
-    <img src="images/portfolio/portfolio-5.jpg">
-    <img src="images/portfolio/portfolio-6.jpg">
-    <img src="images/portfolio/portfolio-7.jpg">
-    <img src="images/portfolio/portfolio-8.jpg">
-    <img src="images/portfolio/portfolio-9.jpg">
-    <!-- End Portfolio Section -->
-    <!-- ======= Services Section ======= -->
-    <h2>Services</h2>
-    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-        aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-        quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-        fugiat sit in iste officiis commodi quidem hic quas.</p>
-    <h4><a href>Lorem Ipsum</a></h4>
-    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias
-        excepturi sint occaecati cupiditate non provident</p>
-    <h4><a href>Dolor Sitema</a></h4>
-    <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat tarad limino ata</p>
-    <h4><a href>Sed ut perspiciatis</a></h4>
-    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur</p>
-    <h4><a href>Magni Dolores</a></h4>
-    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa
-        qui officia deserunt mollit anim id est laborum</p>
-    <h4><a href>Nemo Enim</a></h4>
-    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui
-        blanditiis praesentium voluptatum deleniti atque</p>
-    <h4><a href>Eiusmod Tempor</a></h4>
-    <p>Et harum quidem rerum facilis est et expedita distinctio.
-        Nam libero tempore, cum soluta nobis est eligendi</p>
-    <!-- End Services Section -->
-    <!-- ======= Testimonials Section ======= -->
-    <h2>Testimonials</h2>
-    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-        ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-        quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-        Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-    <!-- End Testimonials Section -->
-    <!-- ======= Contact Section ======= -->
-    <h2>Contact</h2>
-    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-        ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-        quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-        Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-    <h4>Location:</h4>
-    <p>A108 Adam Street, New York, NY 535022</p>
-    <h4>Email:</h4>
-    <p>dmytro.ivaniuk55@gmail.com</p>
-    <h4>Call:</h4>
-    <p>+38 097 158 67 97</p>
-    <label for="name">Your name</label>
-    <input type="text" id="name" name="name" placeholder="Name" required>
-    <label for="email">Your Email</label>
-    <input type="email" id="email" name="email" placeholder="Email" required>
-    <label for="subject">Subject</label>
-    <input type="text" id="subject" name="subject" placeholder="Subject" required>
-    <label for="message">Message</label>
-    <textarea id="message" name="message" placeholder="Your message" required></textarea>
-    <div class="message-act">
-        <div>Loading</div>
-        <div>Your message has been sent. Thank you!</div>
-    </div>
-    <input type="submit" value="Send Message">
-    <!-- End Contact Section -->
+    <main id="main">
+        <!-- ======= About Section ======= -->
+        <section class="container" id="about">
+            <div class="section-title">
+                <h2>About</h2>
+                <p>I am a highly motivated and passionate Junior Front End Developer
+                    with a strong desire to create visually appealing and user-friendly
+                    websites. With a solid foundation in HTML, CSS, and JavaScript,
+                    I am dedicated to continuously expanding my skills and staying up to
+                    date with the latest web development trends and technologies.</p>
+            </div>
+            <div class="row" id="row">
+                <div class="about-img">
+                    <img src="images/profile-img.jpg" alt="profile image">
+                </div>
+                <div class="about-content">
+                    <h3>Web Developer</h3>
+                    <p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</em></p>
+                    <div class="row" id="row">
+                        <ul>
+                            <li><i class='bx bx-chevron-right'></i><strong>Website:</strong><span>
+                                    dmytroivaniuk.github.io</span></li>
+                            <li><i class='bx bx-chevron-right'></i><strong>Phone:</strong><span> +380971586797</span>
+                            </li>
+                            <li><i class='bx bx-chevron-right'></i><strong>City:</strong><span> Odesa, Ukraine</span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><i class='bx bx-chevron-right'></i><strong>Degree:</strong><span> Master</span></li>
+                            <li><i class='bx bx-chevron-right'></i><strong>Email:</strong><span>
+                                    dmytro.ivaniuk55@gmail.com</span></li>
+                            <li><i class='bx bx-chevron-right'></i><strong>Freelance:</strong><span> Available</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>Throughout my academic journey and personal projects, I have gained hands-on
+                        experience in building responsive and accessible websites. I am proficient
+                        in utilizing modern frameworks such as React and Angular to develop
+                        interactive web applications. I also have knowledge of version control
+                        systems like Git, which enables seamless collaboration and efficient code
+                        management.</p>
+                </div>
+            </div>
+        </section>
+        <!-- End About Section -->
+        <!-- ======= Facts Section ======= -->
+        <section class="container">
+            <div class="section-title">
+                <h2>Facts</h2>
+                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+                    aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+                    quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+                    fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+            <div class="row" id="row">
+                <div class="column" id="count-column">
+                    <div class="count-box">
+                        <i class='bx bx-smile'></i><span>232</span>
+                        <p><strong>Happy Clients</strong> consequuntur quae</p>
+                    </div>
+                    <div class="count-box">
+                        <i class='bx bx-task'></i><span>521</span>
+                        <p><strong>Projects</strong> adipisci atque cum quia aut</p>
+                    </div>
+                </div>
+                <div class="column" id="count-column">
+                    <div class="count-box">
+                        <i class='bx bx-support'></i><span>1453</span>
+                        <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
+                    </div>
+                    <div class="count-box">
+                        <i class='bx bx-user-plus'></i><span>32</span>
+                        <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Facts Section -->
+        <!-- ======= Skills Section ======= -->
+        <section class="container section-bg">
+            <div class="section-title">
+                <h2>Skills</h2>
+                <p>As a team player, I thrive in collaborative environments where
+                    I can contribute my ideas and learn from fellow developers.
+                    I have excellent communication skills and can effectively articulate
+                    technical concepts to both technical and non-technical stakeholders.</p>
+            </div>
+            <div class="row" id="row">
+                <div class="column" id="column">
+                    <div class="progress">
+                        <span class="skill">HTML<i>100%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class=progress-bar style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <span class="skill">CSS<i>90%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class=progress-bar style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <span class="skill">JavaScript<i>75%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class=progress-bar style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column" id="column">
+                    <div class="progress">
+                        <span class="skill">PHP<i>80%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class=progress-bar style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <span class="skill">WordPress/CMS<i>90%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class=progress-bar style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <span class="skill">Photoshop<i>55%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class=progress-bar style="width: 55%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Skills Section -->
+        <!-- ======= Resume Section ======= -->
+        <section class="container" id="resume">
+            <div class="section-title">
+                <h2>Resume</h2>
+                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+                    aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+                    quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+                    sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+            <div class="row resume" id="row">
+                <div class="column" id="column">
+                    <h3>Summary</h3>
+                    <div class="resume-item">
+                        <h4>Dmytro Ivaniuk</h4>
+                        <p><em>Innovative and deadline-driven Graphic Designer with 3+ years
+                                of experience designing and developing user-centered digital/print
+                                marketing material from initial concept to final, polished
+                                deliverable.</em></p>
+                        <ul>
+                            <li>Portland par 127,Orlando, FL</li>
+                            <li>(123) 456-7891</li>
+                            <li>alice.barkley@example.com</li>
+                        </ul>
+                    </div>
+                    <h3>Education</h3>
+                    <div class="resume-item">
+                        <h4>Master of Fine Arts & Graphic Design</h4>
+                        <h5>2015-2016</h5>
+                        <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
+                        <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam
+                            iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti
+                            nerada porti sand markend</p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Bachelor of Fine Arts & Graphic Design</h4>
+                        <h5>2010-2014</h5>
+                        <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
+                        <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae
+                            reiciendis et quis Eius vel ratione eius unde vitae rerum
+                            voluptates asperiores voluptatem Earum molestiae consequatur
+                            neque etlon sader mart dila</p>
+                    </div>
+                </div>
+                <div class="column" id="column">
+                    <h3>Professional Experience</h3>
+                    <div class="resume-item">
+                        <h4>Graphic Designer</h4>
+                        <h5>2019-Present</h5>
+                        <p><em>Experion, New York, NY</em></p>
+                        <ul>
+                            <li>Lead in the design, development, and implementation of the
+                                graphic, layout, and production communication materials</li>
+                            <li>Delegate tasks to the 7 members of the design team and
+                                provide counsel on all aspects of the project.</li>
+                            <li>Supervise the assessment of all graphic materials in
+                                order to ensure quality and accuracy of the design</li>
+                            <li>Oversee the efficient use of production project
+                                budgets ranging from $2,000 - $25,000</li>
+                        </ul>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Graphic design specialist</h4>
+                        <h5>2017-2018</h5>
+                        <p><em>Stepping Stone Advertising, New York, NY</em></p>
+                        <ul>
+                            <li>Developed numerous marketing programs (logos, brochures,
+                                infographics, presentations, and advertisements).</li>
+                            <li>Managed up to 5 projects or tasks at a given time while
+                                under pressure</li>
+                            <li>Recommended and consulted with clients on the most
+                                appropriate graphic design</li>
+                            <li>Created 4+ design presentations and proposals a month
+                                for clients and account managers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Resume Section -->
+        <!-- ======= Portfolio Section ======= -->
+        <section class="container section-bg" id="portfolio">
+            <div class="section-title">
+                <h2>Portfolio</h2>
+                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+                    ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+                    quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+                    Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+            <div class="portfolio-buttons">
+                <ul>
+                    <li>All</li>
+                    <li>App</li>
+                    <li>Card</li>
+                    <li>Web</li>
+                </ul>
+            </div>
+            <div class="gallery" id="gallery">
+                <img src="images/portfolio/portfolio-1.jpg">
+                <img src="images/portfolio/portfolio-2.jpg">
+                <img src="images/portfolio/portfolio-3.jpg">
+                <img src="images/portfolio/portfolio-4.jpg">
+                <img src="images/portfolio/portfolio-5.jpg">
+                <img src="images/portfolio/portfolio-6.jpg">
+                <img src="images/portfolio/portfolio-7.jpg">
+                <img src="images/portfolio/portfolio-8.jpg">
+                <img src="images/portfolio/portfolio-9.jpg">
+            </div>
+        </section>
+        <!-- End Portfolio Section -->
+        <!-- ======= Services Section ======= -->
+        <section class="container" id="services">
+            <div class="section-title">
+                <h2>Services</h2>
+                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+                    aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+                    quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+                    fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+            <div class="services" id="services-wrap">
+                <div class="services-item" id="services-item">
+                    <div class="icon">
+                        <i class='bx bx-briefcase'></i>
+                    </div>
+                    <h4><a href>Lorem Ipsum</a></h4>
+                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias
+                        excepturi sint occaecati cupiditate non provident</p>
+                </div>
+                <div class="services-item" id="services-item">
+                    <div class="icon">
+                        <i class='bx bx-list-check'></i>
+                    </div>
+                    <h4><a href>Dolor Sitema</a></h4>
+                    <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat tarad limino ata</p>
+                </div>
+                <div class="services-item" id="services-item">
+                    <div class="icon">
+                        <i class='bx bx-bar-chart-alt'></i>
+                    </div>
+                    <h4><a href>Sed ut perspiciatis</a></h4>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur</p>
+                </div>
+                <div class="services-item" id="services-item">
+                    <div class="icon">
+                        <i class='bx bx-search-alt'></i>
+                    </div>
+                    <h4><a href>Magni Dolores</a></h4>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum</p>
+                </div>
+                <div class="services-item" id="services-item">
+                    <div class="icon">
+                        <i class='bx bx-sun'></i>
+                    </div>
+                    <h4><a href>Nemo Enim</a></h4>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                        blanditiis praesentium voluptatum deleniti atque</p>
+                </div>
+                <div class="services-item" id="services-item">
+                    <div class="icon">
+                        <i class='bx bx-calendar'></i>
+                    </div>
+                    <h4><a href>Eiusmod Tempor</a></h4>
+                    <p>Et harum quidem rerum facilis est et expedita distinctio.
+                        Nam libero tempore, cum soluta nobis est eligendi</p>
+                </div>
+            </div>
+        </section>
+        <!-- End Services Section -->
+        <!-- ======= Testimonials Section ======= -->
+        <section class="container section-bg">
+            <div class="section-title">
+                <h2>Testimonials</h2>
+                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+                    ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+                    quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+                    Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+        </section>
+        <!-- End Testimonials Section -->
+        <!-- ======= Contact Section ======= -->
+        <section class="container" id="contact">
+            <div class="section-title">
+                <h2>Contact</h2>
+                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+                    ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+                    quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+                    Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+            <div class="contact-wrap">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="icon-info">
+                            <i class='bx bx-location-plus'></i>
+                        </div>
+                        <h4>Location:</h4>
+                        <p>A108 Adam Street, New York, NY 535022</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon-info">
+                            <i class='bx bx-envelope'></i>
+                        </div>
+                        <h4>Email:</h4>
+                        <p>dmytro.ivaniuk55@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon-info">
+                            <i class='bx bx-mobile-alt'></i>
+                        </div>
+                        <h4>Call:</h4>
+                        <p>+38 097 158 67 97</p>
+                    </div>
+                </div>
+                <form class="contact-form" onsubmit="showFormData()">
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="name">Your name</label>
+                            <input type="text" id="name" name="name" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                    <input type="submit" id="submit" value="Send Message">
+                </form>
+            </div>
+        </section>
+        <!-- End Contact Section -->
+    </main>
+    <script src="scripts/main.js"></script>
 </body>
