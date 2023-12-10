@@ -21,8 +21,6 @@ h6 {
 }
 
 .container {
-    padding: 60px 80px;
-    margin: 0 auto;
     align-content: space-around;
 }
 
@@ -506,7 +504,6 @@ Contact
 
 .contact-wrap {
     display: flex;
-    align-items: stretch;
     gap: 20px;
 }
 
